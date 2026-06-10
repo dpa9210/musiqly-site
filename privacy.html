@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Musiqly</title>
+  <meta name="description" content="Musiqly Privacy Policy — how we handle your data.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Musiqly" class="nav-logo">
+      <span>Musiqly</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#download" class="btn-nav">Get the App</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Header ── -->
+<div class="privacy-hero">
+  <span class="updated-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+    </svg>
+    Last updated: June 10, 2026
+  </span>
+  <h1>Privacy Policy</h1>
+  <div class="divider"></div>
+  <p style="font-size:1.05rem;">
+    Musiqly is designed to respect your privacy. This page explains what data the app
+    accesses, why, and how it is handled. The short version: your music stays on your
+    device and we do not sell or share your personal data.
+  </p>
+</div>
+
+<!-- ── Policy body ── -->
+<div class="privacy-body">
+
+  <div class="policy-card">
+    <h3>1. Who We Are</h3>
+    <p>
+      Musiqly is a music player and live radio application for Android, developed and
+      maintained independently. For any privacy-related questions, contact us at
+      <a href="mailto:wisedavis@gmail.com" class="contact-link">wisedavis@gmail.com</a>.
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h3>2. Data We Do Not Collect</h3>
+    <p>Musiqly does <strong>not</strong>:</p>
+    <ul>
+      <li>Create user accounts or require registration</li>
+      <li>Collect, transmit, or store personal data on any server we operate</li>
+      <li>Use analytics or crash-reporting SDKs that track individual users</li>
+      <li>Display advertising or share data with advertisers</li>
+      <li>Sell, rent, or trade any information about you to third parties</li>
+    </ul>
+  </div>
+
+  <div class="policy-card">
+    <h3>3. Device Permissions</h3>
+    <p>Musiqly requests the following Android permissions and uses them solely for the stated purpose:</p>
+
+    <p><strong>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE</strong><br>
+    Required to scan your device storage for audio files and build your local music library.
+    Files are read locally — no audio content is uploaded anywhere.</p>
+
+    <p><strong>INTERNET</strong><br>
+    Used for two optional features only:</p>
+    <ul>
+      <li><em>Live radio</em> — streams audio from publicly available radio station URLs that you select.</li>
+      <li><em>Album artwork</em> — if enabled, queries Apple's public iTunes Search API to fetch artwork for tracks that are missing it. Only the artist and album name are sent as search terms in a standard HTTPS request; no personal data is included.</li>
+    </ul>
+
+    <p><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK</strong><br>
+    Keeps music playing while the app is in the background and powers the lock-screen media notification.</p>
+
+    <p><strong>WAKE_LOCK</strong><br>
+    Prevents the CPU from sleeping during playback so audio does not cut out.</p>
+
+    <p><strong>RECEIVE_BOOT_COMPLETED</strong><br>
+    Allows the home-screen widget (if used) to restore its state after a device restart.</p>
+
+    <p><strong>VIBRATE</strong><br>
+    Used only for haptic feedback on button taps within the app; not used to send any data.</p>
+  </div>
+
+  <div class="policy-card">
+    <h3>4. Local Data Storage</h3>
+    <p>
+      All app data — your library, playlists, playback history, settings, and cached
+      artwork — is stored exclusively on your device using a local database (WatermelonDB)
+      and the device file system. This data never leaves your device unless you explicitly
+      export a playlist file (M3U) using the app's share feature.
+    </p>
+    <p>
+      Uninstalling the app removes all associated data from your device.
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h3>5. Third-Party Services</h3>
+
+    <p><strong>Last.fm (optional)</strong><br>
+    If you choose to connect a Last.fm account in Settings, Musiqly will send the title,
+    artist, album, and duration of each track you play to Last.fm for scrobbling. This
+    integration is entirely opt-in and can be disconnected at any time. Last.fm's own
+    <a href="https://www.last.fm/legal/privacy" class="contact-link" target="_blank" rel="noopener">
+      Privacy Policy</a> governs how they handle that data.</p>
+
+    <p><strong>iTunes Search API (optional)</strong><br>
+    When automatic artwork fetching is enabled, Musiqly queries Apple's public
+    iTunes Search API using only the artist and album name of a track that has no
+    artwork. No account, login, or identifier is sent. Apple's
+    <a href="https://www.apple.com/legal/privacy/" class="contact-link" target="_blank" rel="noopener">
+      Privacy Policy</a> governs Apple's handling of those requests.</p>
+
+    <p><strong>Radio station streams</strong><br>
+    When you play a radio station, your device connects directly to that station's
+    streaming server. The station provider may log your IP address as part of normal
+    server operation. Musiqly has no control over those logs.</p>
+  </div>
+
+  <div class="policy-card">
+    <h3>6. Children's Privacy</h3>
+    <p>
+      Musiqly is not directed at children under the age of 13 (or the applicable age
+      of digital consent in your jurisdiction). We do not knowingly collect any
+      information from children. If you believe a child has provided information through
+      this app, please contact us and we will take appropriate action.
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h3>7. Security</h3>
+    <p>
+      Because Musiqly does not transmit your personal data to any server we operate,
+      the risk of a data breach affecting your information is minimal. All network
+      requests the app makes (radio streams, iTunes API, Last.fm if enabled) are made
+      over HTTPS.
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h3>8. Changes to This Policy</h3>
+    <p>
+      If we make material changes to this Privacy Policy, we will update the
+      "Last updated" date at the top of this page and, where appropriate, notify users
+      via an in-app notice. Continued use of Musiqly after changes are posted constitutes
+      acceptance of the updated policy.
+    </p>
+  </div>
+
+  <div class="policy-card">
+    <h3>9. Contact Us</h3>
+    <p>
+      If you have any questions or concerns about this Privacy Policy or Musiqly's
+      data practices, please reach out:
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:wisedavis@gmail.com" class="contact-link">wisedavis@gmail.com</a>
+    </p>
+    <p>We aim to respond to all privacy inquiries within 5 business days.</p>
+  </div>
+
+</div>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Musiqly" class="footer-logo">
+      Musiqly
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:wisedavis@gmail.com">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Musiqly. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
